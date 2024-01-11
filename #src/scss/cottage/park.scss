@@ -1,16 +1,16 @@
 .cottage-park {
 
    &__wrapper {
-      padding-top: 0px;
-      padding-bottom: 134px;
-      padding-left: 0px;
+      padding-top: 95px;
+      padding-bottom: 150px;
+      padding-left: calc(((100vw - 1440px) / 2) + 190px);
 
    }
 
    &__row {
       display: flex;
-      gap: 60px;
-      // justify-content: space-between;
+      gap: 45px;
+      justify-content: space-between;
    }
 
    &__content {
@@ -18,18 +18,16 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 40px;
+      gap: 32px;
    }
 
    &__inner {
       display: flex;
       flex-direction: column;
-      gap: 28px;
+      gap: 24px;
    }
 
-   &__title {
-      line-height: 55px
-   }
+   &__title {}
 
    &__subtitle {
       color: $dark-brown;
@@ -39,7 +37,7 @@
    &__description {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 8px;
 
       a {
          display: inline-block;
@@ -64,38 +62,10 @@
             transform-origin: center;
          }
       }
-
-      ul {
-         display: flex;
-         flex-direction: column;
-         gap: 22px;
-      }
-
-      li {
-         font-size: 16px;
-         font-weight: 400;
-         letter-spacing: 3%;
-         margin-left: 10px;
-         line-height: 22px;
-         list-style: none;
-      }
-
-      li::before {
-         content: '';
-         display: inline-block;
-         height:3px;
-         width: 3px;
-         vertical-align: middle;
-         border-radius:50%;
-         background-color: $dark-brown;
-         margin-right:5px;
-       }
    }
 
    &__image {
-      // width: calc(492 / 1250 * 100%);
-      flex: 0 0 calc(360px + 100 * ((100vw - 992px) / (1440 - 992)));
-      // flex: 0 0 calc(492 / 1250 * 100%);
+      flex: 0 0 calc(310px + 100 * ((100vw - 992px) / (1440 - 992)));
       max-height: 750px;
 
       img {
@@ -112,23 +82,20 @@
 
    @media(max-width: 1439px) {
       &__wrapper {
-         padding-left: 0px;
-         padding-right: 25px;
+         padding-left: calc(16px + 174 * ((100vw - 1055px) / (1440 - 1055)));
       }
    }
 
    @media(max-width: 1055px) {
       &__wrapper {
-         padding-left: 0px;
+         padding-left: calc(24vw - 160px);
       }
    }
 
    @media(max-width: 1039px) {
       &__wrapper {
-         padding-left: 0px;
+         padding-left: calc(20vw - 100px);
       }
-
-
    }
 
    @media(max-width: 992px) {
@@ -140,10 +107,6 @@
 
       &__row {
          flex-direction: column;
-      }
-
-      &__content {
-         padding-left: calc(20vw - 100px);
       }
 
       &__image {

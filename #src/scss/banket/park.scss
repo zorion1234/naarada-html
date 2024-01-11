@@ -2,14 +2,21 @@
   .cottage-park {
      &__wrapper {
         padding-left: 0;
+        padding-top: 0px;
+        padding-bottom: 140px;
         padding-right: calc(((100vw - 1440px) / 2) + 190px);
 
      }
 
      &__description {
         ul li {
+          margin-left: 9px;
            display: flex;
-           gap: 5px;
+           gap: 10px;
+
+           &:not(:last-child) {
+            margin-bottom: 20px;
+           }
 
            &::before {
               content: "\2022";
@@ -20,9 +27,25 @@
 
      &__row {
         flex-direction: row-reverse;
+        gap: 60px;
+     }
+
+     &__inner {
+      gap: 0;
+     }
+
+     &__title {
+      line-height: 55px;
+     }
+
+     &__subtitle {
+      margin-top: 30px;
+      margin-bottom: 25px;
      }
 
      &__image {
+        // width: calc(100 / 1250 * 100%);
+        flex: 0 0 calc(360px + 100 * ((100vw - 992px) / (1440 - 992)));
         height: 526px;
      }
 
