@@ -1,0 +1,121 @@
+.banket-perfect {
+   padding-top: 145px;
+   padding-bottom: 135px;
+   // background: url(../img/banket/perfect-comp.png) right / calc(370 / 1440 * 100%) no-repeat;
+   position: relative;
+
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(to bottom, white 10%, rgba(255, 255, 255, 0.1) 20%);
+      z-index: 1;
+   }
+
+   &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(to top, white 5%, rgba(255, 255, 255, 0.1) 20%);
+      z-index: 1;
+   }
+
+   &__bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: calc(370 / 1440 * 100%);
+      background: url(../img/banket/perfect-comp.png) center / 370px repeat;
+
+      @media(max-width: 768px) {
+         display: none;
+      }
+
+   }
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 55px;
+      padding-left: 80px;
+      padding-right: 80px;
+      max-width: 1600px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+   }
+
+   &__title {}
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   &__item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+   }
+
+   &__icon {
+      width: 64px;
+      height: 64px;
+      flex: 0 0 64px;
+
+      svg {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: $dark-brown;
+
+   }
+
+   &__subtitle {
+      @include subtitle-2;
+   }
+
+   &__text {
+      @include text-2;
+
+   }
+
+
+   @media(max-width: 1055px) {
+      &__wrapper {
+         padding-left: calc(24vw - 160px);
+         padding-right: calc(24vw - 160px);
+      }
+   }
+
+   @media(max-width: 992px) {
+      padding-top: 80px;
+   }
+
+   @media(max-width: 767px) {
+      background: none !important;
+
+      &__wrapper {
+         padding-left: 15px;
+         padding-right: 15px;
+      }
+
+      &__item {
+         gap: 12px;
+      }
+   }
+
+}

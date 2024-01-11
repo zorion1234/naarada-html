@@ -1,0 +1,182 @@
+.cottage-reviews {
+   padding-top: 150px;
+   // padding-bottom: 150px;
+
+   &__wrapper {
+      max-width: 1310px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+
+   }
+
+   &__header {
+      // margin-bottom: 20px;
+   }
+
+   &__title {}
+
+   &__main {
+      position: relative;
+
+      &::before,
+      &::after {
+         content: "";
+         display: block;
+         height: 100%;
+         width: 15px;
+         position: absolute;
+         top: calc((100% - 315px) / 2);
+         top: 0;
+         // box-shadow: -100px 0px 100px 80px rgba(0, 0, 0, 0.09);
+      }
+
+      &::before {
+         right: 100%;
+         background: linear-gradient(to right, $white, rgba(0, 0, 0, 0.03));
+
+      }
+
+      &::after {
+         left: 100%;
+         background: linear-gradient(to left, $white, rgba(0, 0, 0, 0.03));
+      }
+   }
+
+   &__swiper {
+      overflow: unset;
+      overflow-x: hidden;
+      height: 450px;
+      margin-top: 35px;
+
+
+
+      .swiper-wrapper {
+         align-items: start;
+      }
+   }
+
+   &__btn {
+      left: 50%;
+      height: 10px;
+      bottom: 100px;
+
+      &_next {
+         transform: translateX(20px);
+      }
+
+      &_prev {
+         transform: translateX(calc(-50% - 20px));
+
+      }
+   }
+
+   @media(max-width: 992px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+   }
+}
+
+.cottage-review {
+   // max-width: 400px;
+   padding: 20px 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   // height: auto;
+   background: #FFF;
+   /* тень */
+   box-shadow: 0px 0px 80px 4px rgba(0, 0, 0, 0.10);
+   max-height: 315px;
+
+   &__header {
+      display: flex;
+      gap: 12px;
+   }
+
+   &__icon {
+      width: 55px;
+      height: 55px;
+      flex: 0 0 55px;
+      border-radius: 50%;
+      overflow: hidden;
+   }
+
+   &__author {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+   }
+
+   &__name {
+      color: $dark-brown;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 120%;
+      /* 24px */
+   }
+
+   &__company {
+      color: $dark-green;
+
+      /* Текст_2 (адап) */
+      font-family: $publicFont;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+      /* 19.6px */
+      letter-spacing: 0.42px;
+   }
+
+   &__main {
+      overflow: hidden;
+      color: $dark-brown;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 9;
+      /* Число отображаемых строк */
+      line-clamp: 9;
+      display: -webkit-box;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+      overflow: hidden;
+      /* Обрезаем всё за пределами блока */
+      /* Текст_2 (адап) */
+      font-family: $publicFont;
+
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+      /* 19.6px */
+      letter-spacing: 0.42px;
+      flex: 1;
+   }
+
+   &__footer {}
+
+   &__link {
+      color: $dark-green;
+      font-family: $publicFont;
+      font-size: 12px;
+      letter-spacing: -0.24px;
+      display: inline-block;
+      position: relative;
+
+      &:hover::after {
+         transform: scale(0);
+      }
+
+      &::after {
+         content: "";
+         display: block;
+         width: 100%;
+         height: 1px;
+         top: calc(100% + 1px);
+         background-color: $dark-green;
+         left: 0;
+         transition: 0.3s;
+         transform-origin: center;
+      }
+   }
+}

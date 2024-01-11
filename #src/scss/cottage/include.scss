@@ -1,0 +1,38 @@
+.cottage-include {
+
+   &__wrapper {
+      background-color: $light-beige;
+      // height: 318px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 90px 240px;
+   }
+
+   &__text {
+      max-width: 1060px;
+      color: #3C3228;
+      @include text-1;
+   }
+
+   @media(max-width: 1055px) {
+      &__wrapper {
+         padding-right: calc(24vw - 160px);
+      }
+   }
+
+   @media(max-width: 1039px) {
+      &__wrapper {
+         padding-right: calc(20vw - 100px);
+         padding-left: calc(20vw - 100px);
+      }
+   }
+
+   @media(max-width: 767px) {
+      &__wrapper {
+         padding-left: 15px;
+         padding-right: 15px;
+      }
+   }
+}

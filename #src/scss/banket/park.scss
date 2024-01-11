@@ -1,0 +1,53 @@
+.banket-park {
+  .cottage-park {
+     &__wrapper {
+        padding-left: 0;
+        padding-right: calc(((100vw - 1440px) / 2) + 190px);
+
+     }
+
+     &__description {
+        ul li {
+           display: flex;
+           gap: 5px;
+
+           &::before {
+              content: "\2022";
+              font-size: 22px;
+           }
+        }
+     }
+
+     &__row {
+        flex-direction: row-reverse;
+     }
+
+     &__image {
+        height: 526px;
+     }
+
+     @media(max-width: 1200px) {
+        &__wrapper {
+           padding-right: 80px;
+        }
+     }
+
+     @media(max-width: 992px) {
+        &__wrapper {
+           padding-left: calc(20vw - 100px);
+           padding-right: calc(20vw - 100px);
+        }
+
+        &__row {
+           flex-direction: column;
+        }
+     }
+
+     @media(max-width: 768px) {
+        &__wrapper {
+           padding-left: 15px;
+           padding-right: 15px;
+        }
+     }
+  }
+}

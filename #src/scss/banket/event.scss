@@ -1,0 +1,56 @@
+.banket-event {
+
+   &__wrapper {
+      background: url(../img/banket/event1.png) right center/ auto no-repeat;
+      padding-left: calc(((100vw - 1440px) / 2) + 190px);
+      padding-right: calc(((100vw - 1440px) / 2) + 190px);
+      height: 745px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+   }
+
+   &__title {
+      line-height: 60px
+   }
+
+   &__text {
+      @include text-4;
+      color: $dark-brown;
+      max-width: 800px;
+   }
+
+   @media(max-width: 1439px) {
+      &__wrapper {
+         padding-left: calc(16px + 174 * ((100vw - 1055px) / (1440 - 1055)));
+         padding-right: calc(16px + 174 * ((100vw - 1055px) / (1440 - 1055)));
+      }
+   }
+
+   @media(max-width: 1055px) {
+      &__wrapper {
+         padding-left: calc(24vw - 160px);
+         padding-right: calc(24vw - 160px);
+      }
+   }
+
+   @media(max-width: 1039px) {
+      &__wrapper {
+         padding-left: calc(20vw - 100px);
+         padding-right: calc(20vw - 100px);
+
+      }
+   }
+
+   @media(max-width: 767px) {
+      &__wrapper {
+         padding-left: 15px;
+         padding-right: 15px;
+         background: none !important;
+         height: auto;
+         padding-top: 80px;
+         padding-bottom: 80px;
+      }
+   }
+}

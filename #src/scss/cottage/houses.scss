@@ -1,0 +1,72 @@
+.cottage-houses {
+   color: $white;
+
+   &__wrapper {
+      padding-top: 170px;
+      padding-bottom: 170px;
+      background: url(../img/cottage/houses-bg.jpg) center / cover no-repeat;
+   }
+
+   &__row {
+      display: flex;
+      gap: 188px;
+      justify-content: center;
+   }
+
+   &__item {
+      flex: 0 0 342px;
+   }
+
+   &__image {
+      height: 423px;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__type {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 4px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 145%;
+      /* 26.1px */
+      letter-spacing: 0.9px;
+   }
+
+   &__description {
+      @include text-4;
+   }
+
+   &__link {
+      margin-top: 24px;
+   }
+
+   @media(max-width: 992px) {
+      &__row {
+         gap: calc(32px + 150 * ((100vw - 768px) / (992 - 768)));
+      }
+   }
+
+   @media(max-width: 767px) {
+      &__wrapper {
+         padding-left: 15px;
+         padding-right: 15px;
+         padding-top: 70px;
+         padding-bottom: 70px;
+      }
+
+      &__row {
+         flex-direction: column;
+         gap: 32px;
+      }
+
+      &__item {
+         flex: unset;
+      }
+   }
+}

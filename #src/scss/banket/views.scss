@@ -1,0 +1,109 @@
+.banket-views {
+   padding-top: 100px;
+
+   &__wrapper {
+      position: relative;
+   }
+
+   &__swiper {
+      height: 516px;
+      position: relative;
+
+      .swiper-slide {
+         // width: 640px;
+         height: 473px;
+         transition: 1s;
+
+         &.swiper-slide-active {
+            // width: 840px;
+            height: 516px;
+         }
+
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+
+      }
+
+      @media(max-width: 1440px) {
+         height: calc(336px + 180 * ((100vw - 992px) / (1440 - 992)));
+
+         .swiper-slide {
+            height: calc(300px + 173 * ((100vw - 992px) / (1440 - 992)));
+
+            &.swiper-slide-active {
+               height: calc(336px + 180 * ((100vw - 992px) / (1440 - 992)));
+
+            }
+         }
+      }
+
+      @media(max-width: 992px) {
+         height: 336px;
+
+         .swiper-slide {
+            height: 300px;
+
+            &.swiper-slide-active {
+               height: 336px;
+
+            }
+         }
+      }
+   }
+
+   &__pagination {}
+
+   &__btn {
+
+      &_prev {
+         left: calc((100vw / 4) - 32px);
+         transform: rotate(180deg) translateX(100%);
+      }
+
+      &_next {
+         right: calc((100vw / 4) - 32px);
+         transform: translateX(100%);
+      }
+   }
+
+   &__label {
+      @include text-italic;
+      opacity: 0.8;
+      color: $dark-brown;
+      text-align: center;
+      margin-top: 50px;
+   }
+
+   @media(max-width: 992px) {
+      padding-top: 80px;
+   }
+
+   @media(max-width: 768px) {
+      &__btn {
+
+         &_prev {
+            // top: 50%;
+            bottom: 42px;
+            left: 15px;
+            transform: rotate(180deg);
+            z-index: 2;
+         }
+
+         &_next {
+            // top: 50%;
+            bottom: 42px;
+            right: 15px;
+            // transform: translateY(-50%);
+            transform: unset;
+            z-index: 2;
+         }
+      }
+
+      &__label {
+         margin-top: 60px;
+      }
+   }
+}

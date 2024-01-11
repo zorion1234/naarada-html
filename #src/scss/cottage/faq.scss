@@ -1,0 +1,105 @@
+.cottage-faq {
+   padding-top: 40px;
+   padding-bottom: 66px;
+
+   &__wrapper {
+      max-width: 1310px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+
+   &__item {}
+}
+
+.cottage-spoiler {
+   border-bottom: 0.5px solid $dark-brown;
+
+   &__header {
+      padding: 24px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      gap: 32px;
+
+      &.active {
+         .cottage-spoiler {
+            &__icon::after {
+               opacity: 0;
+            }
+         }
+      }
+   }
+
+   &__title {
+      color: $dark-brown;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 145%;
+      /* 40.6px */
+      letter-spacing: 1.4px;
+   }
+
+   &__icon {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      flex: 0 0 20px;
+
+      &::after,
+      &::before {
+         content: "";
+         display: block;
+         height: 1px;
+         width: 20px;
+         position: absolute;
+         background-color: $dark-brown;
+         top: 50%;
+         left: 0;
+         transition: 0.3s;
+      }
+
+      &::after {
+         transform: rotate(90deg)
+      }
+   }
+
+   &__main {
+      p {
+         @include text-1;
+         padding-bottom: 24px;
+         padding-left: 12px;
+         padding-right: 58px;
+         color: $dark-green;
+      }
+   }
+
+   @media(max-width: 768px) {
+      &__header {
+         padding: 16px 8px;
+      }
+
+      &__title {
+         font-size: 22px;
+      }
+
+      &__main {
+         p {
+            font-size: 16px;
+            padding-left: 8px;
+            padding-right: 32px;
+            padding-bottom: 16px;
+         }
+      }
+   }
+}

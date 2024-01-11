@@ -1,0 +1,135 @@
+$white: #FFF;
+$black: #000;
+$light-beige: #E1D4C1;
+$green: #96B5AB;
+$light-green: rgba(150, 181, 171, 0.30);
+$dark-brown: #3C3228;
+$dark-green: #737D72;
+$publicFont: 'Public Sans', sans-serif;
+$orchideaFont: 'OrchideaPro', sans-serif;
+
+@mixin title-1 {
+
+   /* Заголовок_1 */
+   font-family: $orchideaFont;
+   font-size: 60px;
+   font-weight: 800;
+   line-height: calc(70 / 60);
+   /* 116.667% */
+   letter-spacing: 4.2px;
+   text-transform: uppercase;
+}
+
+@mixin title-2 {
+
+   /* заголовок_2 */
+   font-family: $orchideaFont;
+
+   font-size: 42px;
+   font-weight: 600;
+   line-height: 120%;
+   /* 50.4px */
+   letter-spacing: 2.1px;
+}
+
+@mixin subtitle-1 {
+
+   /* Подзаголовок_1 */
+   font-family: $orchideaFont;
+
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 120%;
+   /* 33.6px */
+   letter-spacing: 1.12px;
+}
+
+@mixin subtitle-2 {
+
+   /* Подзаголовок_2 */
+   font-family: $orchideaFont;
+
+   font-size: 20px;
+   font-weight: 700;
+}
+
+@mixin subtitle-3 {
+
+   /* Подзаголовок_3 */
+   font-family: $orchideaFont;
+
+   font-size: 18px;
+}
+
+@mixin description-2 {
+
+   /* описание 2 */
+   font-family: $orchideaFont;
+
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 145%;
+   /* 34.8px */
+   letter-spacing: 1.2px;
+}
+
+@mixin description-banner {
+   color: #000;
+
+   /* Описание в баннере */
+   font-family: $orchideaFont;
+
+   font-size: 20px;
+   line-height: calc(25 / 20);
+   /* 125% */
+   letter-spacing: 2px;
+}
+
+@mixin text-1 {
+
+   /* Текст_1 */
+   font-family: $publicFont;
+   font-size: 22px;
+   line-height: 33px;
+   /* 33px */
+   letter-spacing: 1.6px;
+}
+
+@mixin text-2 {
+
+   /* Текст_2 */
+   font-family: $publicFont;
+   font-size: 18px;
+   line-height: 130%;
+   /* 23.4px */
+   letter-spacing: 0.54px;
+}
+
+@mixin text-3 {
+
+   /* Текст_3 */
+   font-family: "Orchidea Pro", sans-serif;
+
+   font-size: 18px;
+}
+
+@mixin text-4 {
+
+   /* Текст_4 */
+   font-family: $publicFont;
+   font-size: 16px;
+   line-height: 140%;
+   /* 22.4px */
+   letter-spacing: 0.48px;
+}
+
+@mixin text-italic {
+
+   /* Текст курсивом */
+   font-family: $publicFont;
+   font-size: 22px;
+   font-style: italic;
+   line-height: 145%;
+   /* 31.9px */
+   letter-spacing: 1.1px;
+}
