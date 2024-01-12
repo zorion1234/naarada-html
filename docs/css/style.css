@@ -402,7 +402,7 @@ input::-webkit-inner-spin-button {
   font-size: 1.11111vw;
   line-height: 140%;
   /* 22.4px */
-  letter-spacing: 0.48px;
+  letter-spacing: 1px;
   color: #3C3228;
 }
 
@@ -464,9 +464,9 @@ background: url(../img/banket/hero-comp.png); }
   /* Текст_1 */
   font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
-  line-height: 2.29167vw;
+  line-height: 150%;
   /* 33px */
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
   margin-top: 1.52778vw;
   margin-bottom: 0.83333vw;
 }
@@ -478,7 +478,7 @@ background: url(../img/banket/hero-comp.png); }
   font-size: 1.11111vw;
   line-height: 140%;
   /* 22.4px */
-  letter-spacing: 0.48px;
+  letter-spacing: 1px;
 }
 
 .cottage-hero__link {
@@ -637,9 +637,9 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
   /* Текст_1 */
   font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
-  line-height: 2.29167vw;
+  line-height: 150%;
   /* 33px */
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
 }
 
 .cottage-bath__wrapper {
@@ -703,9 +703,9 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
   /* Текст_1 */
   font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
-  line-height: 2.29167vw;
+  line-height: 150%;
   /* 33px */
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
   color: #3C3228;
   max-width: 23.75vw;
   margin-top: 2.08333vw;
@@ -768,9 +768,9 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
   /* Текст_1 */
   font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
-  line-height: 2.29167vw;
+  line-height: 150%;
   /* 33px */
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
 }
 
 .cottage-park__description {
@@ -1009,7 +1009,7 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
   font-size: 1.11111vw;
   line-height: 140%;
   /* 22.4px */
-  letter-spacing: 0.48px;
+  letter-spacing: 1px;
 }
 
 .cottage-houses__link {
@@ -1310,9 +1310,9 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
   /* Текст_1 */
   font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
-  line-height: 2.29167vw;
+  line-height: 150%;
   /* 33px */
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
   padding-bottom: 1.66667vw;
   padding-left: 0.83333vw;
   padding-right: 4.02778vw;
@@ -1566,9 +1566,9 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
   /* Текст_1 */
   font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
-  line-height: 2.29167vw;
+  line-height: 150%;
   /* 33px */
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
 }
 
 .banket-price__text a {
@@ -1773,7 +1773,7 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
   font-size: 1.11111vw;
   line-height: 140%;
   /* 22.4px */
-  letter-spacing: 0.48px;
+  letter-spacing: 1px;
   color: #3C3228;
   max-width: 55.55556vw;
 }

@@ -90,9 +90,8 @@ $orchideaFont: 'OrchideaPro', sans-serif;
    /* Текст_1 */
    font-family: $publicFont;
    font-size: 22px;
-   line-height: 33px;
-   /* 33px */
-   letter-spacing: 1.6px;
+   line-height: 150%; /* 33px */
+   letter-spacing: 1.5px;
 }
 
 @mixin text-2 {
@@ -120,7 +119,7 @@ $orchideaFont: 'OrchideaPro', sans-serif;
    font-size: 16px;
    line-height: 140%;
    /* 22.4px */
-   letter-spacing: 0.48px;
+   letter-spacing: 1px;
 }
 
 @mixin text-italic {
