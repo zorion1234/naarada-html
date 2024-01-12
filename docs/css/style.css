@@ -2402,6 +2402,11 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
     display: none;
   }
 
+  .cottage-comfort__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .cottage-comfort__item {
     font-size: 12px;
     gap: 6px;
