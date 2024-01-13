@@ -85,10 +85,10 @@ if (document.querySelector('.banket-views__swiper')) {
    new Swiper('.banket-views__swiper', {
       loop: true,
       speed: 1000,
+      centeredSlides: true,
       pagination: {
          el: '.banket-views__pagination',
       },
-      centeredSlides: true,
       navigation: {
          nextEl: '.banket-views__btn_next',
          prevEl: '.banket-views__btn_prev',
@@ -100,8 +100,7 @@ if (document.querySelector('.banket-views__swiper')) {
             spaceBetween: 24,
          },
          768: {
-            slidesPerView: 2,
-            initialSlide: 1,
+            slidesPerView: 1.5,
             spaceBetween: 40,
 
          }

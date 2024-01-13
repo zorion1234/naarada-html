@@ -831,6 +831,7 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
 .cottage-park__link {
   color: #3C3228;
   border: 1px solid #3C3228;
+  gap: 1.38889vw;
 }
 
 .cottage-fullpage__slider {
@@ -847,10 +848,6 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 16.15%, rgba(0, 0, 0, 0.77) 100%);
   pointer-events: none;
   z-index: 1;
-}
-
-.cottage-fullpage__swiper {
-  max-height: 100vh;
 }
 
 .cottage-fullpage__swiper .swiper-slide {
@@ -1013,6 +1010,8 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 }
 
 .cottage-houses__link {
+  padding-left: 3.125vw;
+  padding-right: 3.47222vw;
   margin-top: 1.66667vw;
 }
 
@@ -1395,14 +1394,16 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 }
 
 .banket-views__btn_prev {
-  left: calc(25vw - 2.22222vw);
+  left: calc(25vw - 9.51389vw);
+  bottom: 2.29167vw;
   -webkit-transform: rotate(180deg) translateX(100%);
       -ms-transform: rotate(180deg) translateX(100%);
           transform: rotate(180deg) translateX(100%);
 }
 
 .banket-views__btn_next {
-  right: calc(25vw - 2.22222vw);
+  right: calc(25vw - 4.375vw);
+  bottom: 2.29167vw;
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
@@ -1605,7 +1606,11 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
   padding-left: 0;
   padding-top: 0px;
   padding-bottom: 9.72222vw;
-  padding-right: calc((100vw - 100vw) / 2 + 13.19444vw);
+  padding-right: calc((100vw - 100vw) / 2 + 11.11111vw);
+}
+
+.banket-park .cottage-park__description {
+  gap: 0.625vw;
 }
 
 .banket-park .cottage-park__description ul li {
@@ -1638,11 +1643,12 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
 }
 
 .banket-park .cottage-park__title {
-  line-height: 3.81944vw;
+  line-height: 150%;
+  margin-top: -0.69444vw;
 }
 
 .banket-park .cottage-park__subtitle {
-  margin-top: 2.08333vw;
+  margin-top: 1.38889vw;
   margin-bottom: 1.73611vw;
 }
 
@@ -1651,6 +1657,10 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
       -ms-flex: 0 0 calc(25vw + 100 * (100vw - 68.88889vw) / 448);
           flex: 0 0 calc(25vw + 100 * (100vw - 68.88889vw) / 448);
   height: 36.52778vw;
+}
+
+.banket-park .cottage-park__link {
+  gap: 1.38889vw;
 }
 
 .banket-services {
@@ -1741,6 +1751,7 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
   line-height: 130%;
   /* 23.4px */
   letter-spacing: 0.54px;
+  letter-spacing: 1px;
 }
 
 .no-webp .banket-event__wrapper {
@@ -1779,20 +1790,16 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 }
 
 .banket-reviews {
-  padding-top: 3.81944vw;
+  padding-top: 10.41667vw;
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   .banket-views__swiper {
-    height: calc(336px + 180 * (100vw - 992px) / 448);
-  }
-
-  .banket-views__swiper .swiper-slide {
-    height: calc(300px + 173 * (100vw - 992px) / 448);
+    padding-left: 20px;
   }
 
   .banket-views__swiper .swiper-slide.swiper-slide-active {
-    height: calc(336px + 180 * (100vw - 992px) / 448);
+    width: 840px !important;
   }
 }
 
@@ -1842,9 +1849,27 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
     font-size: 50px;
   }
 
+  .banket-views__swiper {
+    height: calc(336px + 180 * (100vw - 992px) / 448);
+  }
+
+  .banket-views__swiper .swiper-slide {
+    height: calc(300px + 173 * (100vw - 992px) / 448);
+  }
+
+  .banket-views__swiper .swiper-slide.swiper-slide-active {
+    height: calc(336px + 180 * (100vw - 992px) / 448);
+  }
+
   .banket-event__wrapper {
     padding-left: calc(16px + 174 * (100vw - 1055px) / 385);
     padding-right: calc(16px + 174 * (100vw - 1055px) / 385);
+  }
+}
+
+@media (max-width: 1400px) {
+  .banket-park .cottage-park__wrapper {
+    padding-right: 80px;
   }
 }
 

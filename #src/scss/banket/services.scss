@@ -54,7 +54,7 @@
 
    &__text {
       @include text-2;
-
+      letter-spacing: 1px;
    }
 
    @media(max-width: 1200px) {
