@@ -1810,6 +1810,12 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
   padding-top: 10.41667vw;
 }
 
+@media (min-width: 1441px) {
+  .banket-views__pagination {
+    bottom: 30px !important;
+  }
+}
+
 @media (max-width: 1439px) {
   .cottage-hero__wrapper {
     padding-left: calc(16px + 174 * (100vw - 1055px) / 385);
