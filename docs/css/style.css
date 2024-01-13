@@ -2460,6 +2460,7 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 
   .banket-views__pagination {
     left: calc(25vw - 400px) !important;
+    bottom: 40px !important;
   }
 
   .banket-views__btn_prev {

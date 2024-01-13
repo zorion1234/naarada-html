@@ -62,6 +62,7 @@
    &__pagination {
       @media(width: 1440px) {
          left: calc((100vw / 4) - 400px) !important;
+         bottom: 40px !important;
       }
    }
 
