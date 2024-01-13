@@ -49,6 +49,10 @@
    &__text {
       margin-bottom: 21px;
       @include text-4;
+
+      &_ogr {
+         max-width: 628px;
+      }
    }
 
 

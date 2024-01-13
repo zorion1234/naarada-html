@@ -39,6 +39,10 @@
       flex-direction: column;
       gap: 8px;
 
+      &_ogr {
+         max-width: 774px;
+      }
+
       a {
          display: inline-block;
          color: $dark-brown;

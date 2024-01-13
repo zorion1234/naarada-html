@@ -481,6 +481,10 @@ background: url(../img/banket/hero-comp.png); }
   letter-spacing: 1px;
 }
 
+.cottage-hero__text_ogr {
+  max-width: 43.61111vw;
+}
+
 .cottage-hero__link {
   color: #737D72;
   border: 1.3px solid #737D72;
@@ -782,6 +786,10 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.55556vw;
+}
+
+.cottage-park__description_ogr {
+  max-width: 53.75vw;
 }
 
 .cottage-park__description a {
@@ -1543,6 +1551,7 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
   line-height: 130%;
   /* 23.4px */
   letter-spacing: 0.54px;
+  max-width: 79.72222vw;
 }
 
 .banket-price {
@@ -1570,6 +1579,10 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
   line-height: 150%;
   /* 33px */
   letter-spacing: 1.5px;
+}
+
+.banket-price__text p + p {
+  margin-top: 4px;
 }
 
 .banket-price__text a {
