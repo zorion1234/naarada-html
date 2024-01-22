@@ -1,3 +1,7 @@
+@import "./old/normalize";
+@import "./old/choices";
+// @import "./old/style";
+
 @import "nullstyle";
 @import "fonts";
 @import "vars";
@@ -20,3 +24,4 @@
 @import "banket/services";
 @import "banket/event";
 @import "banket/reviews";
+

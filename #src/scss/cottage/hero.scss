@@ -36,8 +36,9 @@
    }
 
    &__title {
-      color: $dark-brown;
       @include title-1;
+      color: $dark-brown;
+      margin: 0;
    }
 
    &__subtitle {

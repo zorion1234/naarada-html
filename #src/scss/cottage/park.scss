@@ -30,8 +30,9 @@
    &__title {}
 
    &__subtitle {
-      color: $dark-brown;
       @include text-1;
+      color: $dark-brown;
+      max-width: 100%;
    }
 
    &__description {
