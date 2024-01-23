@@ -894,7 +894,7 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
   right: 3.61111vw;
 }
 
-.banket-fullpage .cottage-fullpage__slider {
+.banket-fullpage .cottage-fullpage__swiper {
   max-height: 57.29167vw;
 }
 
@@ -964,6 +964,12 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
 
 .cottage-preorder__link {
   max-width: unset;
+}
+
+.cottage-preorder__link .project-link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cottage-houses {
@@ -1582,6 +1588,7 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
   max-width: 111.11111vw;
   margin: 0 auto;
   padding: 8.47222vw 5.55556vw;
+  padding-top: 8.26389vw;
 }
 
 .banket-price__text {
@@ -1630,7 +1637,7 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
 .banket-park .cottage-park__wrapper {
   padding-left: 0;
   padding-top: 0px;
-  padding-bottom: 9.72222vw;
+  padding-bottom: 9.375vw;
   padding-right: calc((100vw - 100vw) / 2 + 11.11111vw);
 }
 
@@ -1675,6 +1682,7 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
 .banket-park .cottage-park__subtitle {
   margin-top: 1.38889vw;
   margin-bottom: 1.73611vw;
+  max-width: 50.69444vw;
 }
 
 .banket-park .cottage-park__image {
@@ -1693,7 +1701,7 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
 }
 
 .banket-services__wrapper {
-  padding-top: 7.29167vw;
+  padding-top: 7.08333vw;
   padding-bottom: 7.63889vw;
   padding-left: 5.55556vw;
   padding-right: 5.55556vw;

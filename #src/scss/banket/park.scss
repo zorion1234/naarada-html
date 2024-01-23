@@ -3,7 +3,7 @@
      &__wrapper {
         padding-left: 0;
         padding-top: 0px;
-        padding-bottom: 140px;
+        padding-bottom: 135px;
         padding-right: calc(((100vw - 1440px) / 2) + 160px);
 
      }
@@ -32,6 +32,10 @@
         gap: 60px;
      }
 
+     &__content {
+
+     }
+
      &__inner {
       gap: 0;
      }
@@ -45,6 +49,7 @@
      &__subtitle {
       margin-top: 20px;
       margin-bottom: 25px;
+      max-width: 730px;
      }
 
      &__image {
