@@ -588,8 +588,8 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
 .cottage-comfort__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (13.61111vw)[2];
-  grid-template-columns: repeat(2, 13.61111vw);
+  -ms-grid-columns: (13.88889vw)[2];
+  grid-template-columns: repeat(2, 13.88889vw);
   -webkit-column-gap: 1.11111vw;
      -moz-column-gap: 1.11111vw;
           column-gap: 1.11111vw;
@@ -1039,7 +1039,7 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 }
 
 .cottage-reviews {
-  padding-top: 9.93056vw;
+  padding-top: 10.41667vw;
 }
 
 .cottage-reviews__wrapper {
@@ -1828,7 +1828,7 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 }
 
 .banket-reviews {
-  padding-top: 10.41667vw;
+  padding-top: 9.72222vw;
 }
 
 @media (min-width: 1441px) {
