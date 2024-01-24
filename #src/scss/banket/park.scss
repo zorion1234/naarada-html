@@ -3,7 +3,7 @@
      &__wrapper {
         padding-left: 0;
         padding-top: 0px;
-        padding-bottom: 135px;
+        padding-bottom: 140px;
         padding-right: calc(((100vw - 1440px) / 2) + 160px);
 
      }
@@ -33,7 +33,7 @@
      }
 
      &__content {
-
+      gap: 0;
      }
 
      &__inner {
@@ -55,7 +55,7 @@
      &__image {
         // width: calc(100 / 1250 * 100%);
         flex: 0 0 calc(360px + 100 * ((100vw - 992px) / (1440 - 992)));
-        height: 526px;
+        height: 530px;
      }
 
      &__link {

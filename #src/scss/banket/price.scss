@@ -10,11 +10,11 @@
       max-width: 1600px;
       margin: 0 auto;
       padding: 122px 80px;
-      padding-top: 119px;
    }
 
    &__text {
       @include text-1;
+      letter-spacing: 0.88px;
 
       p+p {
          margin-top: 10px;

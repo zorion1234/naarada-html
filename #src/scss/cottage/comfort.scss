@@ -70,7 +70,7 @@
 
    &__list {
       display: grid;
-      grid-template-columns: repeat(2, 200px);
+      grid-template-columns: repeat(2, 196px);
       column-gap: 16px;
       row-gap: 2px;
    }
@@ -91,6 +91,10 @@
          flex: 0 0 30px;
          width: 30px;
          // height: 30px;
+      }
+
+      span {
+         margin-left: 6px;
       }
    }
 
