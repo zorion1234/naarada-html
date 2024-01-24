@@ -42,10 +42,7 @@
 
    &__link {
       max-width: unset;
-
-      & .project-link {
-         justify-content: center;
-      }
+      justify-content: center;
    }
 
    @media(max-width: 1055px) {
