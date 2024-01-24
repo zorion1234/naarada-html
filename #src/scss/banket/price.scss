@@ -17,7 +17,7 @@
       @include text-1;
 
       p+p {
-         margin-top: 4px;
+         margin-top: 10px;
       }
 
       a {
@@ -40,6 +40,10 @@
             background-color: $white;
             transition: 0.3s;
          }
+      }
+
+      @media (max-width: 767px) {
+         font-size: 18px;
       }
    }
 

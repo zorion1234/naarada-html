@@ -56,65 +56,6 @@ export const scss = () => {
     .pipe(app.plugins.browsersync.stream());
 };
 
-export const scssMobile = () => {
-  return app.gulp
-    .src(app.path.src.scss, { sourcemaps: true })
-    .pipe(
-      app.plugins.plumber(
-        app.plugins.notify.onError({
-          title: "SCSS",
-          message: "Error: <%= error.message %>",
-        })
-      )
-    )
-    .pipe(app.plugins.replace(/@img\//g, "../img/"))
-    .pipe(
-      sass({
-        outputStyle: "expanded",
-      })
-    )
-    .pipe(
-      postcss([
-        pxtoviewport({
-          viewportWidth: 760,
-          viewportUnit: "vw",
-          minPixelValue: 5,
-          selectorBlackList: [
-            // /\.b-progress-bar/,
-            // /\.b-progress-bar__smartline/,
-            // /\.b-progress-bar__smartline::after/,
-            // /\.b-progress-bar__info/,
-          ],
-        }),
-      ])
-    )
-
-    .pipe(groupCssMediaQueries())
-    .pipe(
-      webpcss({
-        webpClass: ".webp",
-        noWebpClass: ".no-webp",
-      })
-    )
-    .pipe(
-      autoprefixer({
-        grid: true,
-        overrideBrowserslist: ["last 3 versions"],
-        cascade: true,
-      })
-    )
-    .pipe(app.gulp.dest(app.path.build.css))
-    .pipe(cleanCss())
-    .pipe(
-      rename({
-        extname: ".mobile.min.css",
-      })
-    )
-    .pipe(inject.wrap("@media (max-width: 1440px) {\n", "\n}"))
-    .pipe(app.gulp.dest(app.path.build.css))
-    .pipe(app.plugins.browsersync.stream());
-};
-
 export const scssDesktop = () => {
   return app.gulp
     .src(app.path.src.scss, { sourcemaps: true })

@@ -1601,7 +1601,7 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
 }
 
 .banket-price__text p + p {
-  margin-top: 4px;
+  margin-top: 0.69444vw;
 }
 
 .banket-price__text a {
@@ -2402,6 +2402,14 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
     margin-right: -15px;
   }
 
+  .banket-views__btn_prev {
+    bottom: 50%;
+  }
+
+  .banket-views__btn_next {
+    bottom: 50%;
+  }
+
   .banket-perfect {
     background: none !important;
   }
@@ -2413,6 +2421,10 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 
   .banket-perfect__item {
     gap: 12px;
+  }
+
+  .banket-price__text {
+    font-size: 18px;
   }
 
   .banket-price__wrapper {

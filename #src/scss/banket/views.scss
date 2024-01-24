@@ -83,6 +83,10 @@
             left: calc((100vw / 4) - 137px);
             bottom: 33px;
          }
+
+         @media (max-width: 767px) {
+            bottom: 50%;
+         }
       }
 
       &_next {
@@ -95,6 +99,10 @@
          @media (width: 1440px) {
             right: calc((100vw / 4) - 63px);
             bottom: 33px;
+         }
+
+         @media (max-width: 767px) {
+            bottom: 50%;
          }
       }
    }
