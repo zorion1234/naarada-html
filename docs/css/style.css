@@ -925,7 +925,6 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 
 .cottage-reviews__swiper {
   overflow: unset;
-  overflow-x: hidden;
   height: 31.25vw;
   margin-top: 2.43056vw;
 }
@@ -950,6 +949,10 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 }
 
 .cottage-review {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   padding: 1.38889vw 2.08333vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -964,6 +967,12 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
   -webkit-box-shadow: 0px 0px 5.55556vw 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 5.55556vw 4px rgba(0, 0, 0, 0.1);
   max-height: 21.875vw;
+}
+
+.cottage-review.swiper-slide-active,
+.cottage-review.swiper-slide-active + .cottage-review,
+.cottage-review.swiper-slide-active + .cottage-review + .cottage-review {
+  opacity: 1;
 }
 
 .cottage-review__header {
