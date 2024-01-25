@@ -267,10 +267,6 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-.wrapper-new {
-  font-family: "OrchideaPro", sans-serif;
-}
-
 .breadcrumbs__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,7 +284,6 @@ input::-webkit-inner-spin-button {
 .breadcrumbs__link {
   color: #3C3228;
   /* Текст_2 (адап) */
-  font-family: "Public Sans", sans-serif;
   font-size: 0.97222vw;
   font-weight: 300;
   line-height: 140%;
@@ -306,7 +301,6 @@ input::-webkit-inner-spin-button {
 
 .breadcrumbs__link::after {
   content: ">";
-  font-family: "Public Sans", sans-serif;
   font-size: 0.97222vw;
   font-weight: 300;
   line-height: 140%;
@@ -387,7 +381,6 @@ input::-webkit-inner-spin-button {
 
 .subtitle {
   /* заголовок_2 */
-  font-family: "OrchideaPro", sans-serif;
   font-size: 2.91667vw;
   font-weight: 600;
   line-height: 120%;
@@ -398,7 +391,6 @@ input::-webkit-inner-spin-button {
 
 .main-text {
   /* Текст_4 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.11111vw;
   line-height: 140%;
   /* 22.4px */
@@ -450,7 +442,6 @@ background: url(../img/banket/hero-comp.png); }
 
 .cottage-hero__title {
   /* Заголовок_1 */
-  font-family: "OrchideaPro", sans-serif;
   font-size: 4.16667vw;
   font-weight: 800;
   line-height: 1.1666666667;
@@ -463,7 +454,6 @@ background: url(../img/banket/hero-comp.png); }
 
 .cottage-hero__subtitle {
   /* Текст_1 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
   line-height: 150%;
   /* 33px */
@@ -475,7 +465,6 @@ background: url(../img/banket/hero-comp.png); }
 .cottage-hero__text {
   margin-bottom: 1.45833vw;
   /* Текст_4 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.11111vw;
   line-height: 140%;
   /* 22.4px */
@@ -604,7 +593,6 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
       -ms-flex-align: center;
           align-items: center;
   color: rgba(60, 50, 40, 0.7);
-  font-family: "Public Sans", sans-serif;
   font-size: 0.97222vw;
   line-height: 150%;
   /* 21px */
@@ -642,7 +630,6 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
   max-width: 73.61111vw;
   color: #3C3228;
   /* Текст_1 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
   line-height: 150%;
   /* 33px */
@@ -712,7 +699,6 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
 
 .cottage-bath__subtitle {
   /* Текст_1 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
   line-height: 150%;
   /* 33px */
@@ -776,7 +762,6 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
 
 .cottage-park__subtitle {
   /* Текст_1 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
   line-height: 150%;
   /* 33px */
@@ -943,7 +928,6 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
 
 .cottage-preorder__title {
   /* описание 2 */
-  font-family: "OrchideaPro", sans-serif;
   font-size: 1.66667vw;
   font-weight: 600;
   line-height: 145%;
@@ -1025,7 +1009,6 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 
 .cottage-houses__description {
   /* Текст_4 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.11111vw;
   line-height: 140%;
   /* 22.4px */
@@ -1039,6 +1022,7 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 }
 
 .cottage-reviews {
+  position: relative;
   padding-top: 10.41667vw;
 }
 
@@ -1059,31 +1043,6 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
   position: relative;
 }
 
-.cottage-reviews__main::before,
-.cottage-reviews__main::after {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 1.04167vw;
-  position: absolute;
-  top: calc((100% - 21.875vw) / 2);
-  top: 0;
-}
-
-.cottage-reviews__main::before {
-  right: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#FFF), to(rgba(0, 0, 0, 0.03)));
-  background: -o-linear-gradient(left, #FFF, rgba(0, 0, 0, 0.03));
-  background: linear-gradient(to right, #FFF, rgba(0, 0, 0, 0.03));
-}
-
-.cottage-reviews__main::after {
-  left: 100%;
-  background: -webkit-gradient(linear, right top, left top, from(#FFF), to(rgba(0, 0, 0, 0.03)));
-  background: -o-linear-gradient(right, #FFF, rgba(0, 0, 0, 0.03));
-  background: linear-gradient(to left, #FFF, rgba(0, 0, 0, 0.03));
-}
-
 .cottage-reviews__swiper {
   overflow: unset;
   overflow-x: hidden;
@@ -1100,19 +1059,14 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 .cottage-reviews__btn {
   left: 50%;
   height: 0.69444vw;
-  bottom: 6.94444vw;
-}
-
-.cottage-reviews__btn_next {
-  -webkit-transform: translateX(1.38889vw);
-      -ms-transform: translateX(1.38889vw);
-          transform: translateX(1.38889vw);
+  bottom: 5.90278vw;
+  padding: 1.38889vw;
 }
 
 .cottage-reviews__btn_prev {
-  -webkit-transform: translateX(calc(-50% - 1.38889vw));
-      -ms-transform: translateX(calc(-50% - 1.38889vw));
-          transform: translateX(calc(-50% - 1.38889vw));
+  -webkit-transform: translateX(calc(-50% - 2.43056vw));
+      -ms-transform: translateX(calc(-50% - 2.43056vw));
+          transform: translateX(calc(-50% - 2.43056vw));
 }
 
 .cottage-review {
@@ -1171,7 +1125,6 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 .cottage-review__company {
   color: #737D72;
   /* Текст_2 (адап) */
-  font-family: "Public Sans", sans-serif;
   font-size: 0.97222vw;
   font-weight: 300;
   line-height: 140%;
@@ -1194,7 +1147,6 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
   overflow: hidden;
   /* Обрезаем всё за пределами блока */
   /* Текст_2 (адап) */
-  font-family: "Public Sans", sans-serif;
   font-size: 0.97222vw;
   font-weight: 300;
   line-height: 140%;
@@ -1207,7 +1159,6 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 
 .cottage-review__link {
   color: #737D72;
-  font-family: "Public Sans", sans-serif;
   font-size: 0.83333vw;
   letter-spacing: -0.24px;
   display: inline-block;
@@ -1330,7 +1281,6 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 
 .cottage-spoiler__main p {
   /* Текст_1 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
   line-height: 150%;
   /* 33px */
@@ -1438,7 +1388,6 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 
 .banket-views__label {
   /* Текст курсивом */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
   font-style: italic;
   line-height: 145%;
@@ -1558,14 +1507,12 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
 
 .banket-perfect__subtitle {
   /* Подзаголовок_2 */
-  font-family: "OrchideaPro", sans-serif;
   font-size: 1.38889vw;
   font-weight: 700;
 }
 
 .banket-perfect__text {
   /* Текст_2 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.25vw;
   line-height: 130%;
   /* 23.4px */
@@ -1593,7 +1540,6 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
 
 .banket-price__text {
   /* Текст_1 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.52778vw;
   line-height: 150%;
   /* 33px */
@@ -1777,14 +1723,12 @@ background: url(../img/banket/perfect-comp.png) center/25.69444vw repeat; }
 
 .banket-services__subtitle {
   /* Подзаголовок_2 */
-  font-family: "OrchideaPro", sans-serif;
   font-size: 1.38889vw;
   font-weight: 700;
 }
 
 .banket-services__text {
   /* Текст_2 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.25vw;
   line-height: 130%;
   /* 23.4px */
@@ -1818,7 +1762,6 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 
 .banket-event__text {
   /* Текст_4 */
-  font-family: "Public Sans", sans-serif;
   font-size: 1.11111vw;
   line-height: 140%;
   /* 22.4px */
@@ -2070,16 +2013,22 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
   }
 
   .cottage-comfort__btn {
-    top: unset;
-    bottom: 12px;
+    top: 50%;
+    bottom: unset;
   }
 
   .cottage-comfort__btn_next {
-    right: 15px;
+    right: 12px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .cottage-comfort__btn_prev {
-    right: 85px;
+    left: 12px;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+        -ms-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
   }
 
   .cottage-comfort__bg {
@@ -2260,7 +2209,6 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
   }
 
   .banket-views__btn_prev {
-    bottom: 42px;
     left: 15px;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -2269,7 +2217,6 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
   }
 
   .banket-views__btn_next {
-    bottom: 42px;
     right: 15px;
     -webkit-transform: unset;
         -ms-transform: unset;
@@ -2278,16 +2225,21 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
   }
 
   .banket-views__label {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .banket-perfect__bg {
     display: none;
   }
 
+  .banket-park .cottage-park__content {
+    gap: 30px;
+  }
+
   .banket-park .cottage-park__wrapper {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 60px;
   }
 }
 
@@ -2328,6 +2280,11 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
     margin: 0;
   }
 
+  .cottage-comfort__btn {
+    width: 55px;
+    height: 55px;
+  }
+
   .cottage-include__wrapper {
     padding-left: 15px;
     padding-right: 15px;
@@ -2347,6 +2304,11 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
   .cottage-park__image {
     margin-left: -15px;
     margin-right: -15px;
+  }
+
+  .cottage-fullpage__btn {
+    width: 55px;
+    height: 55px;
   }
 
   .cottage-fullpage__btn_prev {
@@ -2409,10 +2371,14 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 
   .banket-views__btn_prev {
     bottom: 50%;
+    width: 55px;
+    height: 55px;
   }
 
   .banket-views__btn_next {
     bottom: 50%;
+    width: 55px;
+    height: 55px;
   }
 
   .banket-perfect {

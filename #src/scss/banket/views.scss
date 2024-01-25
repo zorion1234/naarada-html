@@ -86,6 +86,8 @@
 
          @media (max-width: 767px) {
             bottom: 50%;
+            width: 55px;
+            height: 55px;
          }
       }
 
@@ -103,6 +105,8 @@
 
          @media (max-width: 767px) {
             bottom: 50%;
+            width: 55px;
+            height: 55px;
          }
       }
    }
@@ -128,25 +132,20 @@
       &__btn {
 
          &_prev {
-            // top: 50%;
-            bottom: 42px;
             left: 15px;
             transform: rotate(180deg);
             z-index: 2;
          }
 
          &_next {
-            // top: 50%;
-            bottom: 42px;
             right: 15px;
-            // transform: translateY(-50%);
             transform: unset;
             z-index: 2;
          }
       }
 
       &__label {
-         margin-top: 60px;
+         margin-top: 40px;
       }
    }
 }

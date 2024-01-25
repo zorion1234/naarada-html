@@ -15,8 +15,6 @@
    }
 
    &__swiper {
-      // max-height: 100vh;
-
       .swiper-slide {
          user-select: none;
 
@@ -44,6 +42,9 @@
 
    @media(max-width: 767px) {
       &__btn {
+         width: 55px;
+         height: 55px;
+
          &_prev {
             left: 15px;
          }

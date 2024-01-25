@@ -1,5 +1,19 @@
 .cottage-reviews {
+   position: relative;
    padding-top: 150px;
+
+
+   // &::before {
+   //    content: "";
+   //    position: absolute;
+   //    width: calc((100vw - 1310px) / 2 - 25px);
+   //    height: calc(100% - 150px);
+   //    // top: 85px;
+   //    // left: -60px;
+   //    display: block;
+   //    background-color: white;
+   //    z-index: 100;
+   // }
 
    &__wrapper {
       max-width: 1310px;
@@ -7,6 +21,8 @@
       padding: 0 15px;
       display: flex;
       flex-direction: column;
+      // background: grey;
+
 
    }
 
@@ -19,28 +35,28 @@
    &__main {
       position: relative;
 
-      &::before,
-      &::after {
-         content: "";
-         display: block;
-         height: 100%;
-         width: 15px;
-         position: absolute;
-         top: calc((100% - 315px) / 2);
-         top: 0;
-         // box-shadow: -100px 0px 100px 80px rgba(0, 0, 0, 0.09);
-      }
+      // &::before,
+      // &::after {
+      //    content: "";
+      //    display: block;
+      //    height: 100%;
+      //    width: 15px;
+      //    position: absolute;
+      //    top: calc((100% - 315px) / 2);
+      //    top: 0;
+      //    // box-shadow: -100px 0px 100px 80px rgba(0, 0, 0, 0.09);
+      // }
 
-      &::before {
-         right: 100%;
-         background: linear-gradient(to right, $white, rgba(0, 0, 0, 0.03));
+      // &::before {
+      //    right: 100%;
+      //    background: linear-gradient(to right, $white, rgba(0, 0, 0, 0.03));
 
-      }
+      // }
 
-      &::after {
-         left: 100%;
-         background: linear-gradient(to left, $white, rgba(0, 0, 0, 0.03));
-      }
+      // &::after {
+      //    left: 100%;
+      //    background: linear-gradient(to left, $white, rgba(0, 0, 0, 0.03));
+      // }
    }
 
    &__swiper {
@@ -59,15 +75,15 @@
    &__btn {
       left: 50%;
       height: 10px;
-      bottom: 100px;
+      bottom: 85px;
+      padding: 20px;
 
       &_next {
-         transform: translateX(20px);
+         // transform: translateX(20px);
       }
 
       &_prev {
-         transform: translateX(calc(-50% - 20px));
-
+         transform: translateX(calc(-50% - 35px));
       }
    }
 
@@ -120,7 +136,7 @@
       color: $dark-green;
 
       /* Текст_2 (адап) */
-      font-family: $publicFont;
+      // font-family: $publicFont;
       font-size: 14px;
       font-weight: 300;
       line-height: 140%;
@@ -142,7 +158,7 @@
       overflow: hidden;
       /* Обрезаем всё за пределами блока */
       /* Текст_2 (адап) */
-      font-family: $publicFont;
+      // font-family: $publicFont;
 
       font-size: 14px;
       font-weight: 300;
@@ -156,7 +172,7 @@
 
    &__link {
       color: $dark-green;
-      font-family: $publicFont;
+      // font-family: $publicFont;
       font-size: 12px;
       letter-spacing: -0.24px;
       display: inline-block;

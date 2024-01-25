@@ -24,7 +24,7 @@
 }
 
 .wrapper-new {
-   font-family: $orchideaFont;
+   // font-family: $orchideaFont;
 }
 
 .breadcrumbs {
@@ -45,7 +45,7 @@
       color: $dark-brown;
 
       /* Текст_2 (адап) */
-      font-family: $publicFont;
+      // font-family: $publicFont;
       font-size: 14px;
       font-weight: 300;
       line-height: 140%;
@@ -58,7 +58,7 @@
 
       &::after {
          content: ">";
-         font-family: $publicFont;
+         // font-family: $publicFont;
          font-size: 14px;
          font-weight: 300;
          line-height: 140%;

@@ -80,7 +80,7 @@
       align-items: center;
       // gap: 10px;
       color: rgba(60, 50, 40, 0.70);
-      font-family: $publicFont;
+      // font-family: $publicFont;
       font-size: 14px;
       line-height: 150%;
       /* 21px */
@@ -148,16 +148,17 @@
       }
 
       &__btn {
-         // top: calc(100% + 16px);
-         top: unset;
-         bottom: 12px;
+         top: 50%;
+         bottom: unset;
 
          &_next {
-            right: 15px;
+            right: 12px;
+            transform: translateY(-50%);
          }
 
          &_prev {
-            right: calc(15px + 54px + 16px);
+            left: 12px;
+            transform: translateY(-50%) rotate(180deg);
          }
       }
 
@@ -182,6 +183,11 @@
 
       &__description {
          margin: 0;
+      }
+
+      &__btn {
+         width: 55px;
+         height: 55px;
       }
    }
 
