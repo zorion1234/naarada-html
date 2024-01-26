@@ -29,6 +29,9 @@ if (document.querySelector('.cottage-comfort__swiper')) {
          nextEl: '.cottage-comfort__btn_next',
          prevEl: '.cottage-comfort__btn_prev',
       },
+      pagination: {
+         el: '.cottage-comfort__pagination',
+      },
    });
 }
 if (document.querySelector('.cottage-bath__swiper')) {
@@ -42,6 +45,7 @@ if (document.querySelector('.cottage-bath__swiper')) {
          nextEl: '.cottage-bath__btn_next',
          prevEl: '.cottage-bath__btn_prev',
       },
+
    });
 }
 if (document.querySelector('.cottage-fullpage__swiper')) {

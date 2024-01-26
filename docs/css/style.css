@@ -143,6 +143,10 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
+.swiper-button-lock {
+  display: none !important;
+}
+
 .collapse:not(.collapse_show) {
   display: none;
 }
@@ -416,11 +420,19 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
   height: 29.44444vw;
 }
 
+.cottage-comfort__swiper .swiper-slide {
+  width: calc(48.61111vw + 70 * (100vw - 100vw) / 1120);
+}
+
 .cottage-comfort__swiper .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.cottage-comfort__swiper .swiper-pagination {
+  bottom: 2.08333vw;
 }
 
 .cottage-comfort__btn {
@@ -902,6 +914,7 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 }
 
 .cottage-reviews {
+  overflow-x: hidden;
   position: relative;
   padding-top: 10.41667vw;
 }
@@ -1979,7 +1992,7 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 
   .cottage-park__wrapper {
     padding-right: calc(20vw - 100px);
-    padding-bottom: 120px;
+    padding-bottom: 70px;
   }
 
   .cottage-park__row {

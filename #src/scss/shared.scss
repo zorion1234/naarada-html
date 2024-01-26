@@ -19,6 +19,10 @@
    }
 }
 
+.swiper-button-lock {
+   display: none !important;
+ }
+
 .collapse:not(.collapse_show) {
    display: none;
 }
