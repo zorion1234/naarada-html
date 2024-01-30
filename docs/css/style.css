@@ -950,9 +950,15 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 
 .cottage-reviews__btn {
   left: 50%;
-  height: 0.69444vw;
-  bottom: 5.90278vw;
-  padding: 1.38889vw;
+  width: 3.47222vw;
+  height: 2.08333vw;
+  bottom: 3.81944vw;
+}
+
+.cottage-reviews__btn_next {
+  -webkit-transform: translateX(0.69444vw);
+      -ms-transform: translateX(0.69444vw);
+          transform: translateX(0.69444vw);
 }
 
 .cottage-reviews__btn_prev {

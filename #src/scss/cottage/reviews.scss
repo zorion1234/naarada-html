@@ -36,12 +36,12 @@
 
    &__btn {
       left: 50%;
-      height: 10px;
-      bottom: 85px;
-      padding: 20px;
+      width: 50px;
+      height: 30px;
+      bottom: 55px;
 
       &_next {
-         // transform: translateX(20px);
+         transform: translateX(10px);
       }
 
       &_prev {
