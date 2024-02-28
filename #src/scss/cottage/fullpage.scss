@@ -15,10 +15,14 @@
    }
 
    &__swiper {
+      max-height: 825px;
+
       .swiper-slide {
          user-select: none;
+         height: 825px;
 
          img {
+            display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -41,6 +45,14 @@
    }
 
    @media(max-width: 767px) {
+      &__swiper {
+         max-height: 450px;
+
+         .swiper-slide {
+            height: 450px;
+         }
+      }
+
       &__btn {
          width: 55px;
          height: 55px;
@@ -60,6 +72,22 @@
    .cottage-fullpage {
       &__swiper {
          max-height: 825px;
+
+         .swiper-slide {
+            height: 825px;
+         }
+      }
+   }
+
+   @media(max-width: 767px) {
+      .cottage-fullpage {
+         &__swiper {
+            max-height: 450px;
+
+            .swiper-slide {
+               height: 450px;
+            }
+         }
       }
    }
 }

@@ -8,12 +8,11 @@
       right: 0;
       top: 0;
       width: calc(370 / 1440 * 100%);
-      background: url(../img/cottage/composition-hero.png), $light-green;
+      background: url(../img/cottage/composition-hero.png) 0 0/contain $light-green no-repeat;
       z-index: 0;
 
       &_banket {
-         background: url(../img/banket/hero-comp.png);
-
+         background: url(../img/banket/hero-comp.png) 0 0/contain no-repeat;
       }
    }
 
@@ -33,6 +32,7 @@
 
    &__content {
       max-width: 672px;
+      padding-bottom: 20px;
    }
 
    &__title {

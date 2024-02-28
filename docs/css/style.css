@@ -288,7 +288,7 @@ input::-webkit-inner-spin-button {
 }
 
 .no-webp .cottage-hero__bg {
-background: url(../img/cottage/composition-hero.png), rgba(150, 181, 171, 0.3); }
+background: url(../img/cottage/composition-hero.png) 0 0/contain rgba(150, 181, 171, 0.3) no-repeat; }
 
 .cottage-hero__bg {
   position: absolute;
@@ -300,7 +300,7 @@ background: url(../img/cottage/composition-hero.png), rgba(150, 181, 171, 0.3); 
 }
 
 .no-webp .cottage-hero__bg_banket {
-background: url(../img/banket/hero-comp.png); }
+background: url(../img/banket/hero-comp.png) 0 0/contain no-repeat; }
 
 .cottage-hero__wrapper {
   padding-top: 11.80556vw;
@@ -322,6 +322,7 @@ background: url(../img/banket/hero-comp.png); }
 
 .cottage-hero__content {
   max-width: 46.66667vw;
+  padding-bottom: 1.38889vw;
 }
 
 .cottage-hero__title {
@@ -743,14 +744,20 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
   z-index: 1;
 }
 
+.cottage-fullpage__swiper {
+  max-height: 57.29167vw;
+}
+
 .cottage-fullpage__swiper .swiper-slide {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  height: 57.29167vw;
 }
 
 .cottage-fullpage__swiper .swiper-slide img {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -777,6 +784,10 @@ background: url(../img/cottage/composition-bg.png), #E1D4C1; }
 
 .banket-fullpage .cottage-fullpage__swiper {
   max-height: 57.29167vw;
+}
+
+.banket-fullpage .cottage-fullpage__swiper .swiper-slide {
+  height: 57.29167vw;
 }
 
 .cottage-preorder__wrapper {
@@ -1302,7 +1313,7 @@ background: url(../img/cottage/houses-bg.jpg) center/cover no-repeat; }
 }
 
 .banket-perfect {
-  padding-top: 10.06944vw;
+  padding-top: 8.68056vw;
   padding-bottom: 9.375vw;
   position: relative;
 }
@@ -2204,6 +2215,14 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
     margin-right: -15px;
   }
 
+  .cottage-fullpage__swiper {
+    max-height: 450px;
+  }
+
+  .cottage-fullpage__swiper .swiper-slide {
+    height: 450px;
+  }
+
   .cottage-fullpage__btn {
     width: 55px;
     height: 55px;
@@ -2215,6 +2234,14 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 
   .cottage-fullpage__btn_next {
     right: 15px;
+  }
+
+  .banket-fullpage .cottage-fullpage__swiper {
+    max-height: 450px;
+  }
+
+  .banket-fullpage .cottage-fullpage__swiper .swiper-slide {
+    height: 450px;
   }
 
   .cottage-preorder__wrapper {
@@ -2380,12 +2407,12 @@ background: url(../img/banket/event1.png) right center/auto no-repeat; }
 
 @media (min-width: 1440px) {
 
-.webp .cottage-hero__bg { background: url(../img/cottage/composition-hero.webp), rgba(150, 181, 171, 0.3); }
+.webp .cottage-hero__bg { background: url(../img/cottage/composition-hero.webp) 0 0/contain rgba(150, 181, 171, 0.3) no-repeat; }
 }
 
 @media (min-width: 1440px) {
 
-.webp .cottage-hero__bg_banket { background: url(../img/banket/hero-comp.webp); }
+.webp .cottage-hero__bg_banket { background: url(../img/banket/hero-comp.webp) 0 0/contain no-repeat; }
 }
 
 @media (min-width: 1440px) {
